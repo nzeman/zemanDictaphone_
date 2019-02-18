@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:summary="Postavke"
+        android:title="Postavke zapisa">
+
+        <ListPreference
+            android:entries="@array/listAudioFormatOptions"
+            android:entryValues="@array/listAudioFormatValues"
+            android:defaultValue="2"
+            android:key="listpref3"
+            android:summary="%s"
+
+            android:title="Audio Format" />
+        <!--
+                android:dialogTitle=".wav zauzima najviše prostora dok .awb najmanje (.awb koristiti samo za snimanje razgovora)"
+             -->
+
+        <ListPreference
+            android:entries="@array/listEncodingBitrateOptions"
+            android:entryValues="@array/listEncodingBitrateValues"
+            android:defaultValue="128000"
+            android:key="listpref"
+            android:summary="%s"
+
+            android:dialogTitle="Nisu sve opcije podržane od strane svih formata"
+
+            android:title="Audio Encoding Bitrate" />
+
+        <!--
+          android:dialogTitle=".awb : 6.6, 8.85, 12.65, 23.85 kbps .aac podržava sve vrijednosti
+            .wav ima svoj kbps i ova opcija ne utječe na snimanje .wav zapisa .3gp podržava sve vrijednosti"
+        -->
+
+        <!--
+   android:dialogTitle=".awb koristi 16kHz i niže vrijednosti
+            .Wav koristi 22.05Khz pa na niže
+            .aac koristi sve opcije
+            .3gp koristi sve opcije
+            "
+ -->
+        <ListPreference
+            android:entries="@array/listSamplingRateOptions"
+            android:entryValues="@array/listSamplingRateValues"
+            android:defaultValue="44100"
+            android:key="listpref2"
+
+            android:dialogTitle="Nisu sve opcije podržane od strane svih formata"
+
+            android:summary="%s"
+            android:title="Audio Sample Rate" />
+
+
+        <ListPreference
+            android:entries="@array/listFormatStringOptions"
+            android:entryValues="@array/listFormatStringValues"
+            android:key="listpref4"
+            android:summary="%s"
+            android:title="Izgled zapisa imena datoteke"
+            android:defaultValue="yyyy-MM-dd__hh-mm-ss" />
+
+
+        <!--
+                <EditTextPreference
+
+                    android:key="recordingFolder"
+                    android:summary="Promijeni gdje se spremaju zapisi"
+                    android:title="Mapa zapisa" />
+                    -->
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:summary="Prikazi dialog za preimenovanje"
+        android:title="Preimenovanje">
+
+        <CheckBoxPreference
+            android:key="checkBoxRenameDialog"
+            android:summary="Uključeno / Isključeno"
+            android:title="Rename dialog nakon snimanja?"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+
+    <!-- za splashscreen timer -->
+    <PreferenceCategory
+        android:summary="Prikazi splashscreen kod pokretanja aplikacije"
+        android:title="Splashscreen">
+
+        <CheckBoxPreference
+            android:key="checkBoxSplashScreen"
+            android:summary="Uključeno / Isključeno"
+            android:title="Prikazi Splashscreen?"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:summary="Postavke korisničkog sučelja"
+        android:title="Postavke korisničkog sučelja">
+        <CheckBoxPreference
+            android:key="checkBoxFilePath"
+            android:summary="Da / Ne"
+            android:title="Prikaži putanju zapisa?"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="checkBoxEncoding"
+            android:summary="Da / Ne"
+            android:title="Prikaži trenutno enkodiranje?"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="checkBoxSampling"
+            android:summary="Da / Ne"
+            android:title="Prikaži sampling rate?"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="checkBoxMB"
+            android:summary="Da / Ne"
+            android:title="Prikaži slobodne MB?"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

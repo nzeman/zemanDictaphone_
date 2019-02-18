@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/action_popis"
+        android:icon="@drawable/play3"
+        android:orderInCategory="100"
+        android:title="Preslušavanje"
+        app:showAsAction="always|withText"></item>
+
+    <item
+        android:id="@+id/action_preferences"
+        android:orderInCategory="200"
+        android:title="Postavke"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/settings3"></item>
+
+
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="300"
+        android:title="O aplikaciji"
+        app:showAsAction="never"></item>
+
+
+
+
+
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Naziv datoteke"
+        android:textSize="21dp"
+
+
+        android:layout_alignTop="@+id/status"
+        android:layout_toLeftOf="@+id/status"
+        android:layout_alignLeft="@+id/lastTimeModified"
+        android:layout_alignStart="@+id/lastTimeModified" />
+
+    <TextView
+        android:id="@+id/lastTimeModified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datum"
+        android:textSize="15dp"
+
+        android:layout_below="@+id/name"
+        android:layout_toLeftOf="@+id/status"
+        android:layout_toRightOf="@+id/imageViewIcon" />
+
+    <ImageButton
+        android:src="@drawable/play00"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"
+
+
+        android:id="@+id/status"
+        android:background="@color/ColorPrimary"
+        android:textColor="@color/White"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+
+        android:text="PLAY"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="9dp"
+        android:id="@+id/imageViewIcon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

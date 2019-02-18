@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="listAudioFormatOptions">
+        <item>.3gp</item>
+        <item>.aac</item>
+        <item>.awb</item>
+        <item>.wav</item>
+
+    </string-array>
+
+    <string-array name="listAudioFormatValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+
+    </string-array>
+
+    <string-array name="listEncodingBitrateOptions"       >
+        <item>6.6 kbps</item>
+        <item>8.85 kbps</item>
+        <item>12.65 kbps</item>
+        <item>23.85 kbps</item>
+
+        <item>32kbps</item>
+        <item>96kbps</item>
+        <item>128kbps</item>
+        <item>192kbps</item>
+        <item>320kbps</item>
+    </string-array>
+
+    <string-array name="listEncodingBitrateValues">
+        <item>6600</item>
+        <item>8850</item>
+        <item>12650</item>
+        <item>23850</item>
+        <item>32000</item>
+        <item>96000</item>
+        <item>128000</item>
+        <item>192000</item>
+        <item>320000</item>
+    </string-array>
+
+
+    <string-array name="listSamplingRateOptions">
+
+        <item>6.4 kHz</item>
+        <item>8 kHz</item>
+        <item>11 kHz</item>
+        <item>16 kHz</item>
+        <item>22.05 kHz</item>
+        <item>44.1 kHz</item>
+
+
+    </string-array>
+
+    <string-array name="listSamplingRateValues">
+        <item>6400</item>
+        <item>8000</item>
+        <item>11000</item>
+        <item>16000</item>
+        <item>22050</item>
+        <item>44100</item>
+
+    </string-array>
+
+
+    <string-array name="listFormatStringOptions">
+        <item>godina-mjesec-dan__sati-minute-sekunde</item>
+        <item>sati-minute-sekunde__godina-mjesec-dan</item>
+        <item>godina__sati-minute-sekunde</item>
+        <item>dan_mjesec_godina_sati_minute_sekunde</item>
+    </string-array>
+
+    <string-array name="listFormatStringValues">
+        <item>yyyy-MM-dd__hh-mm-ss</item>
+        <item>hh-mm-ss__yyyy-MM-dd</item>
+        <item>yyyy__hh-mm-ss</item>
+        <item>dd_MM_yyyy_HH_mm_ss</item>
+    </string-array>
+
+
+    <string-array name="animators">
+        <item>Slide left</item>
+        <item>Slide right</item>
+        <item>Slide top</item>
+        <item>Slide bottom</item>
+        <item>Scale</item>
+        <item>Slide right and Scale</item>
+    </string-array>
+
+
+</resources>
